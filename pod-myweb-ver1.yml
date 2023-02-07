@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-web
+spec:
+  containers:
+    - name: container-apache
+      image: adv4000/k8sphp
+      ports:
+        - containerPort: 80
